@@ -1,5 +1,6 @@
 package File;
 
+import Base.Dragon;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonSyntaxException;
@@ -10,11 +11,12 @@ import java.util.LinkedList;
 
 public class JsonParser {
 
-    public LinkedList<String>  deSerialize(String sb) throws JsonSyntaxException, IllegalArgumentException {
-        Gson g = new GsonBuilder().registerTypeAdapter(java.time.ZonedDateTime.class, new Deserealizer()).create();//Что в скобках?
-        Type type = new TypeToken<LinkedList<String>>(){
+    public LinkedList<Dragon>  deSerialize(String sb) throws JsonSyntaxException, IllegalArgumentException { //метод обрабатывающий json
+        Gson g = new GsonBuilder().registerTypeAdapter(java.time.ZonedDateTime.class, new Deserealizer()).create();//?????
+        Type type = new TypeToken<LinkedList<Dragon>>(){ //
         }.getType();
         if("".equals(sb)){
+            System.out.println("Check");
             return new LinkedList<>();
         }
         return g.fromJson(sb, type);

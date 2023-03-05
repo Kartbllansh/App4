@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0423a3ed-6ef4-4669-a704-13583979880b" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/CollectionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/File/JsonParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/HelpCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/InfoCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/INFO.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Base/Dragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Base/Dragon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollectionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/File/Deserealizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/File/Deserealizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/File/FileMaker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/File/FileRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/File/FileRead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/File/JsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/File/JsonParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -91,7 +92,8 @@
       <workItem from="1676892380116" duration="876000" />
       <workItem from="1677343027938" duration="4889000" />
       <workItem from="1677956099876" duration="6126000" />
-      <workItem from="1678007548552" duration="4767000" />
+      <workItem from="1678007548552" duration="13669000" />
+      <workItem from="1678040001410" duration="5517000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1677791322294</created>
@@ -100,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677791322294</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1678012496145</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678012496145</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +125,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="com.google.gson.JsonSyntaxException" package="com.google.gson" />
           <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.reflect.InaccessibleObjectException" package="java.lang.reflect" />
+          <option name="timeStamp" value="3" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

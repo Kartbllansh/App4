@@ -10,4 +10,26 @@ public class Dragon {
     private Color color; //Поле не может быть null
     private DragonType type; //Поле не может быть null
     private DragonHead head;
+public Dragon (String name, Coordinates coordinates, Integer age, Long weight,Color color, DragonType type,DragonHead head) {
+this.name = name;
+    this.coordinates = coordinates;
+    this.age = age;
+    this.weight = weight;
+    this.color = color;
+    this.type = type;
+    this.head = head;
+}
+    @Override
+    public String toString(){
+        return "StudyGroup{"
+                + "id=" + id
+                + ", name='" + name + '\''
+                + ", coordinates=" + coordinates
+                + ", creationDate=" + creationDate
+                + ", age=" + age
+                + ", weight=" + weight
+                + ", color=" + color
+                + ", head=" + head
+                + '}';
+    }
 }

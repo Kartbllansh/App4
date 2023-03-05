@@ -1,10 +1,17 @@
+import Base.Dragon;
+
+import java.time.LocalDate;
 import java.util.LinkedList;
 
 public class CollectionManager {
-    private LinkedList<String> baseList =new LinkedList<>();
+    private LinkedList<Dragon> baseList =new LinkedList<>();
 
 
-    public void makeBase(LinkedList<String> list){
+    public void makeBase(LinkedList<Dragon> list){
         this.baseList = list;
     }
+    public void getInfo(){
+
+    }
+
 }

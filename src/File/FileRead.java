@@ -3,6 +3,7 @@ package File;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class FileRead {
@@ -25,4 +26,5 @@ public class FileRead {
         System.out.println("WORKKKK"); //проверка работы метода
         return sb.toString();
     }
+
 }

@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0423a3ed-6ef4-4669-a704-13583979880b" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/Command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command/HelpCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command/InfoCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Base/Dragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Base/Dragon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/File/Deserealizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/File/Deserealizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/File/JsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/File/JsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/InfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/InfoCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +89,8 @@
       <workItem from="1677956099876" duration="6126000" />
       <workItem from="1678007548552" duration="13669000" />
       <workItem from="1678040001410" duration="5517000" />
+      <workItem from="1678123570955" duration="556000" />
+      <workItem from="1678127289100" duration="1420000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1677791322294</created>
@@ -114,6 +111,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />

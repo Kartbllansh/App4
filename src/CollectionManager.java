@@ -11,7 +11,7 @@ public class CollectionManager {
         this.baseList = list;
     }
     public void getInfo(){
-
+        System.out.println("Коллекция");
     }
 
 }

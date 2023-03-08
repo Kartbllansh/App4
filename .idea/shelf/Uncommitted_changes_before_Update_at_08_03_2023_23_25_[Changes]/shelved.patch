@@ -1,0 +1,271 @@
+Index: src/Command/InfoCommand.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Command;\r\n\r\npublic class InfoCommand implements Command{\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Command/InfoCommand.java b/src/Command/InfoCommand.java
+--- a/src/Command/InfoCommand.java	
++++ b/src/Command/InfoCommand.java	
+@@ -1,5 +1,7 @@
+ package Command;
+ 
+ public class InfoCommand implements Command{
++public void execute(){
+ 
+ }
++}
+Index: src/Command/HelpCommand.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Command;\r\n\r\nimport java.util.HashMap;\r\n\r\npublic class HelpCommand implements Command{\r\n    private HashMap<String, Command> mapCommand;\r\n    public HelpCommand(HashMap<String, Command> command ){\r\n        this.mapCommand = command;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Command/HelpCommand.java b/src/Command/HelpCommand.java
+--- a/src/Command/HelpCommand.java	
++++ b/src/Command/HelpCommand.java	
+@@ -6,5 +6,9 @@
+     private HashMap<String, Command> mapCommand;
+     public HelpCommand(HashMap<String, Command> command ){
+         this.mapCommand = command;
++    }
++    @Override
++    public void execute(){
++
+     }
+ }
+Index: src/Command/Command.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Command;\r\n\r\npublic interface Command {\r\n    void execute();\r\n\r\n    default String getDescription(){ //метод по умолчанию\r\n        return \"Описания у этой команды нет\"\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Command/Command.java b/src/Command/Command.java
+--- a/src/Command/Command.java	
++++ b/src/Command/Command.java	
+@@ -4,7 +4,7 @@
+     void execute();
+ 
+     default String getDescription(){ //метод по умолчанию
+-        return "Описания у этой команды нет"
++        return "Описания у этой команды нет";
+     }
+ 
+ 
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"0423a3ed-6ef4-4669-a704-13583979880b\" name=\"Changes\" comment=\"Initial commit\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/Command/Command.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Command/HelpCommand.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Command/InfoCommand.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Base/Dragon.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Base/Dragon.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/CollectionManager.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/CollectionManager.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/File/Deserealizer.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/File/Deserealizer.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/File/JsonParser.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/File/JsonParser.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Main.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Enum\" />\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_AUTO_UPDATE\" value=\"true\" />\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2LutydcrTlRTmpTLqnCzxlouiM9\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/Home/ITMO/gson-2.2.4-sources.jar&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\r\n      <module name=\"App\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.Main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"0423a3ed-6ef4-4669-a704-13583979880b\" name=\"Changes\" comment=\"\" />\r\n      <created>1676733050726</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1676733050726</updated>\r\n      <workItem from=\"1676733051996\" duration=\"10940000\" />\r\n      <workItem from=\"1676819286916\" duration=\"1213000\" />\r\n      <workItem from=\"1676825336616\" duration=\"1407000\" />\r\n      <workItem from=\"1676827971404\" duration=\"1405000\" />\r\n      <workItem from=\"1676892380116\" duration=\"876000\" />\r\n      <workItem from=\"1677343027938\" duration=\"4889000\" />\r\n      <workItem from=\"1677956099876\" duration=\"6126000\" />\r\n      <workItem from=\"1678007548552\" duration=\"13669000\" />\r\n      <workItem from=\"1678040001410\" duration=\"5517000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Initial commit\">\r\n      <created>1677791322294</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1677791322294</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Initial commit\">\r\n      <created>1678012496145</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1678012496145</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Initial commit\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Initial commit\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <breakpoint enabled=\"true\" type=\"java-exception\">\r\n          <properties class=\"com.google.gson.JsonSyntaxException\" package=\"com.google.gson\" />\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </breakpoint>\r\n        <breakpoint enabled=\"true\" type=\"java-exception\">\r\n          <properties class=\"java.lang.reflect.InaccessibleObjectException\" package=\"java.lang.reflect\" />\r\n          <option name=\"timeStamp\" value=\"3\" />\r\n        </breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -5,14 +5,26 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="0423a3ed-6ef4-4669-a704-13583979880b" name="Changes" comment="Initial commit">
+-      <change afterPath="$PROJECT_DIR$/src/Command/Command.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Command/HelpCommand.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Command/InfoCommand.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Command/CommandAdd.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Command/CommandAddMin.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Command/CommandClear.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Command/CommandExecute.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Command/CommandExit.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Command/CommandPrintAge.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Command/CommandPrintType.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Command/CommandRemoveGreater.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Command/CommandRemoveId.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Command/CommandRemoveType.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Command/CommandSave.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Command/CommandShow.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Command/CommandUpdateId.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/Base/Dragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Base/Dragon.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollectionManager.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/Command.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Command/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/HelpCommand.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Command/InfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/InfoCommand.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/File/Deserealizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/File/Deserealizer.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/File/JsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/File/JsonParser.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -93,7 +105,8 @@
+       <workItem from="1677343027938" duration="4889000" />
+       <workItem from="1677956099876" duration="6126000" />
+       <workItem from="1678007548552" duration="13669000" />
+-      <workItem from="1678040001410" duration="5517000" />
++      <workItem from="1678040001410" duration="6317000" />
++      <workItem from="1678282717231" duration="9595000" />
+     </task>
+     <task id="LOCAL-00001" summary="Initial commit">
+       <created>1677791322294</created>
+@@ -109,7 +122,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1678012496145</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="Initial commit">
++      <created>1678046872889</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1678046872889</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+Index: src/Command/CommandPrintAge.java
+===================================================================
+diff --git a/src/Command/CommandPrintAge.java b/src/Command/CommandPrintAge.java
+new file mode 100644
+--- /dev/null	
++++ b/src/Command/CommandPrintAge.java	
+@@ -0,0 +1,4 @@
++package Command;
++
++public class CommandPrintAge {
++}
+Index: src/Command/CommandPrintType.java
+===================================================================
+diff --git a/src/Command/CommandPrintType.java b/src/Command/CommandPrintType.java
+new file mode 100644
+--- /dev/null	
++++ b/src/Command/CommandPrintType.java	
+@@ -0,0 +1,4 @@
++package Command;
++
++public class CommandPrintType {
++}
+Index: src/Command/CommandShow.java
+===================================================================
+diff --git a/src/Command/CommandShow.java b/src/Command/CommandShow.java
+new file mode 100644
+--- /dev/null	
++++ b/src/Command/CommandShow.java	
+@@ -0,0 +1,4 @@
++package Command;
++
++public class CommandShow {
++}
+Index: src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import Base.Dragon;\r\nimport File.FileRead;\r\nimport File.JsonParser;\r\nimport java.util.LinkedList;\r\npublic class Main {\r\n    public static void main(String[] args) {\r\n        //if(args.length == 0) {\r\n            //System.out.println(\"Hello. I am waiting your file\");\r\n           // return;\r\n        //}\r\n        //FileRead fr = new FileRead(args[0]);\r\n\r\n        FileRead fr = new FileRead(\"C:\\\\Users\\\\Home\\\\IdeaProjects\\\\App/inform13.json\");\r\n        String data = fr.readFile();\r\n        System.out.println(data);\r\n        LinkedList<Dragon> string = new JsonParser().deSerialize(data);\r\n        CollectionManager collection = new CollectionManager();\r\n                collection.makeBase(string);\r\n        System.out.println(string);\r\n\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Main.java b/src/Main.java
+--- a/src/Main.java	
++++ b/src/Main.java	
+@@ -1,9 +1,12 @@
+ import Base.Dragon;
+ import File.FileRead;
+ import File.JsonParser;
++
++import java.time.Instant;
+ import java.util.LinkedList;
+ public class Main {
+     public static void main(String[] args) {
++
+         //if(args.length == 0) {
+             //System.out.println("Hello. I am waiting your file");
+            // return;
+@@ -13,7 +16,7 @@
+         FileRead fr = new FileRead("C:\\Users\\Home\\IdeaProjects\\App/inform13.json");
+         String data = fr.readFile();
+         System.out.println(data);
+-        LinkedList<Dragon> string = new JsonParser().deSerialize(data);
++        LinkedList<Dragon> string = new  JsonParser().deSerialize(data);
+         CollectionManager collection = new CollectionManager();
+                 collection.makeBase(string);
+         System.out.println(string);
+Index: src/CollectionManager.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import Base.Dragon;\r\n\r\nimport java.time.LocalDate;\r\nimport java.util.LinkedList;\r\n\r\npublic class CollectionManager {\r\n    private LinkedList<Dragon> baseList =new LinkedList<>();\r\n\r\n\r\n    public void makeBase(LinkedList<Dragon> list){\r\n        this.baseList = list;\r\n    }\r\n    public void getInfo(){\r\n\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/CollectionManager.java b/src/CollectionManager.java
+--- a/src/CollectionManager.java	
++++ b/src/CollectionManager.java	
+@@ -1,10 +1,20 @@
+ import Base.Dragon;
++import Base.DragonType;
++import org.w3c.dom.Node;
+ 
++import java.time.Instant;
+ import java.time.LocalDate;
++import java.time.ZonedDateTime;
+ import java.util.LinkedList;
+ 
+ public class CollectionManager {
+-    private LinkedList<Dragon> baseList =new LinkedList<>();
++
++    private LinkedList<Dragon> baseList;
++    private ZonedDateTime initializator;
++    public CollectionManager(){
++        String i = Instant.now().toString();
++        System.out.println(i);
++    }
+ 
+ 
+     public void makeBase(LinkedList<Dragon> list){
+@@ -13,5 +23,16 @@
+     public void getInfo(){
+ 
+     }
++    public void clear(){
++        baseList.clear();
++        System.out.println("Коллекция очищена");
++    }
++    public void removeAtIndex(int id){
++        baseList.remove(id);
++    }
++    public void removeByType(DragonType typee){
++       for(int i=0; i< baseList.size(); i++){
+ 
++       }
++    }
+ }
+Index: src/Command/CommandRemoveType.java
+===================================================================
+diff --git a/src/Command/CommandRemoveType.java b/src/Command/CommandRemoveType.java
+new file mode 100644
+--- /dev/null	
++++ b/src/Command/CommandRemoveType.java	
+@@ -0,0 +1,4 @@
++package Command;
++
++public class CommandRemoveType {
++}
+Index: src/Command/CommandRemoveGreater.java
+===================================================================
+diff --git a/src/Command/CommandRemoveGreater.java b/src/Command/CommandRemoveGreater.java
+new file mode 100644
+--- /dev/null	
++++ b/src/Command/CommandRemoveGreater.java	
+@@ -0,0 +1,4 @@
++package Command;
++
++public class CommandRemoveGreater {
++}
+Index: src/Command/CommandAddMin.java
+===================================================================
+diff --git a/src/Command/CommandAddMin.java b/src/Command/CommandAddMin.java
+new file mode 100644
+--- /dev/null	
++++ b/src/Command/CommandAddMin.java	
+@@ -0,0 +1,4 @@
++package Command;
++
++public class CommandAddMin {
++}

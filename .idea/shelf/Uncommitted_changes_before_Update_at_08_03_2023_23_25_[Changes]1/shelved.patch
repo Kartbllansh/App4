@@ -1,0 +1,240 @@
+Index: src/Command/CommandExit.java
+===================================================================
+diff --git a/src/Command/CommandExit.java b/src/Command/CommandExit.java
+new file mode 100644
+--- /dev/null	
++++ b/src/Command/CommandExit.java	
+@@ -0,0 +1,16 @@
++package Command;
++
++public class CommandExit implements Command {
++    public CommandExit(){
++
++    }
++    @Override
++    public void execute(){
++        System.out.println("Программа устала и ушла спать");
++        System.exit(0); // 0 - указывает, что программа заканчивается правильно
++    }
++    @Override
++    public String getDescription(){
++        return "Завершает работу программы";
++    }
++}
+Index: src/Command/CommandExecute.java
+===================================================================
+diff --git a/src/Command/CommandExecute.java b/src/Command/CommandExecute.java
+new file mode 100644
+--- /dev/null	
++++ b/src/Command/CommandExecute.java	
+@@ -0,0 +1,4 @@
++package Command;
++
++public class CommandExecute {
++}
+Index: src/Command/CommandSave.java
+===================================================================
+diff --git a/src/Command/CommandSave.java b/src/Command/CommandSave.java
+new file mode 100644
+--- /dev/null	
++++ b/src/Command/CommandSave.java	
+@@ -0,0 +1,4 @@
++package Command;
++
++public class CommandSave {
++}
+Index: src/File/Deserealizer.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package File;\r\n\r\nimport com.google.gson.*;\r\nimport com.google.gson.reflect.TypeToken;\r\n\r\nimport java.lang.reflect.Type;\r\nimport java.time.ZoneId;\r\nimport java.time.ZonedDateTime;\r\nimport java.util.Map;\r\nimport java.util.Set;\r\n\r\npublic class Deserealizer implements JsonDeserializer<java.time.ZonedDateTime> {\r\n@Override\r\n    public ZonedDateTime deserialize(JsonElement json, Type typeOft, JsonDeserializationContext context) throws JsonParseException {\r\nGson g = new Gson();\r\nType type = new TypeToken<Map<String, Integer>>() {\r\n    }.getType();\r\nMap<String, Integer> map = g.fromJson(json.toString(), type);\r\n    return ZonedDateTime.of(\r\n            map.get(\"year\"),\r\n            map.get(\"month\"),\r\n            map.get(\"day\"),\r\n            map.get(\"hour\"),\r\n            map.get(\"minute\"),\r\n            map.get(\"second\"),\r\n            ZoneId.of(map.get(\"timezone\"))\r\n    );\r\n}\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/File/Deserealizer.java b/src/File/Deserealizer.java
+--- a/src/File/Deserealizer.java	
++++ b/src/File/Deserealizer.java	
+@@ -6,24 +6,17 @@
+ import java.lang.reflect.Type;
+ import java.time.ZoneId;
+ import java.time.ZonedDateTime;
++import java.time.format.DateTimeFormatter;
++import java.util.Locale;
+ import java.util.Map;
+ import java.util.Set;
+ 
+ public class Deserealizer implements JsonDeserializer<java.time.ZonedDateTime> {
+ @Override
+     public ZonedDateTime deserialize(JsonElement json, Type typeOft, JsonDeserializationContext context) throws JsonParseException {
+-Gson g = new Gson();
+-Type type = new TypeToken<Map<String, Integer>>() {
+-    }.getType();
+-Map<String, Integer> map = g.fromJson(json.toString(), type);
+-    return ZonedDateTime.of(
+-            map.get("year"),
+-            map.get("month"),
+-            map.get("day"),
+-            map.get("hour"),
+-            map.get("minute"),
+-            map.get("second"),
+-            ZoneId.of(map.get("timezone"))
+-    );
++JsonObject object = json.getAsJsonObject();
++    return ZonedDateTime.parse(json.getAsString(),
++    DateTimeFormatter.ofPattern("d::MMM::uuuu HH::mm::ss").withLocale(Locale.ENGLISH));
++
+ }
+ }
+Index: src/Command/CommandClear.java
+===================================================================
+diff --git a/src/Command/CommandClear.java b/src/Command/CommandClear.java
+new file mode 100644
+--- /dev/null	
++++ b/src/Command/CommandClear.java	
+@@ -0,0 +1,5 @@
++package Command;
++
++public class CommandClear  {
++
++}
+Index: src/Command/CommandRemoveId.java
+===================================================================
+diff --git a/src/Command/CommandRemoveId.java b/src/Command/CommandRemoveId.java
+new file mode 100644
+--- /dev/null	
++++ b/src/Command/CommandRemoveId.java	
+@@ -0,0 +1,4 @@
++package Command;
++
++public class CommandRemoveId {
++}
+Index: src/Base/Dragon.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Base;\r\n\r\npublic class Dragon {\r\n    private Long id; //Поле не может быть null, Значение поля должно быть больше 0, Значение этого поля должно быть уникальным, Значение этого поля должно генерироваться автоматически\r\n    private String name; //Поле не может быть null, Строка не может быть пустой\r\n    private Coordinates coordinates; //Поле не может быть null\r\n    private java.time.ZonedDateTime creationDate; //Поле не может быть null, Значение этого поля должно генерироваться автоматически\r\n    private Integer age; //Значение поля должно быть больше 0, Поле может быть null\r\n    private Long weight; //Значение поля должно быть больше 0, Поле не может быть null\r\n    private Color color; //Поле не может быть null\r\n    private DragonType type; //Поле не может быть null\r\n    private DragonHead head;\r\npublic Dragon (String name, Coordinates coordinates, Integer age, Long weight,Color color, DragonType type,DragonHead head) {\r\nthis.name = name;\r\n    this.coordinates = coordinates;\r\n    this.age = age;\r\n    this.weight = weight;\r\n    this.color = color;\r\n    this.type = type;\r\n    this.head = head;\r\n}\r\n    @Override\r\n    public String toString(){\r\n        return \"StudyGroup{\"\r\n                + \"id=\" + id\r\n                + \", name='\" + name + '\\''\r\n                + \", coordinates=\" + coordinates\r\n                + \", creationDate=\" + creationDate\r\n                + \", age=\" + age\r\n                + \", weight=\" + weight\r\n                + \", color=\" + color\r\n                + \", head=\" + head\r\n                + '}';\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Base/Dragon.java b/src/Base/Dragon.java
+--- a/src/Base/Dragon.java	
++++ b/src/Base/Dragon.java	
+@@ -1,6 +1,8 @@
+ package Base;
+ 
+-public class Dragon {
++import java.time.ZonedDateTime;
++
++public class Dragon  {
+     private Long id; //Поле не может быть null, Значение поля должно быть больше 0, Значение этого поля должно быть уникальным, Значение этого поля должно генерироваться автоматически
+     private String name; //Поле не может быть null, Строка не может быть пустой
+     private Coordinates coordinates; //Поле не может быть null
+@@ -18,6 +20,7 @@
+     this.color = color;
+     this.type = type;
+     this.head = head;
++    this.creationDate = java.time.ZonedDateTime.now();
+ }
+     @Override
+     public String toString(){
+@@ -30,6 +33,80 @@
+                 + ", weight=" + weight
+                 + ", color=" + color
+                 + ", head=" + head
++                + ", type=" + type
+                 + '}';
+     }
++
++    public String getName() {
++        return name;
++    }
++
++    public Color getColor() {
++        return color;
++    }
++
++    public Coordinates getCoordinates() {
++        return coordinates;
++    }
++
++    public DragonHead getHead() {
++        return head;
++    }
++
++    public DragonType getType() {
++        return type;
++    }
++
++    public Integer getAge() {
++        return age;
++    }
++
++    public Long getId() {
++        return id;
++    }
++
++    public Long getWeight() {
++        return weight;
++    }
++
++    public ZonedDateTime getCreationDate() {
++        return creationDate;
++    }
++
++    public void setAge(Integer age) {
++        this.age = age;
++    }
++
++    public void setColor(Color color) {
++        this.color = color;
++    }
++
++    public void setCoordinates(Coordinates coordinates) {
++        this.coordinates = coordinates;
++    }
++
++    public void setCreationDate(ZonedDateTime creationDate) {
++        this.creationDate = creationDate;
++    }
++
++    public void setHead(DragonHead head) {
++        this.head = head;
++    }
++
++    public void setId(Long id) {
++        this.id = id;
++    }
++
++    public void setName(String name) {
++        this.name = name;
++    }
++
++    public void setType(DragonType type) {
++        this.type = type;
++    }
++
++    public void setWeight(Long weight) {
++        this.weight = weight;
++    }
++
+ }
+Index: src/Command/CommandUpdateId.java
+===================================================================
+diff --git a/src/Command/CommandUpdateId.java b/src/Command/CommandUpdateId.java
+new file mode 100644
+--- /dev/null	
++++ b/src/Command/CommandUpdateId.java	
+@@ -0,0 +1,4 @@
++package Command;
++
++public class CommandUpdateId {
++}
+Index: src/Command/CommandAdd.java
+===================================================================
+diff --git a/src/Command/CommandAdd.java b/src/Command/CommandAdd.java
+new file mode 100644
+--- /dev/null	
++++ b/src/Command/CommandAdd.java	
+@@ -0,0 +1,4 @@
++package Command;
++
++public class CommandAdd {
++}

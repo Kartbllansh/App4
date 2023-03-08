@@ -1,0 +1,24 @@
+Index: src/File/FileMaker.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package File;\r\n\r\nimport com.google.gson.Gson;\r\nimport com.google.gson.GsonBuilder;\r\n\r\nimport java.util.LinkedList;\r\n\r\npublic class FileMaker {\r\n\r\n    public LinkedList<String>  deSerialize(String sb){\r\n        Gson g = new GsonBuilder().registerTypeAdapter(java.time.ZonedDateTime.class, new Deserealizer() ) //Что в скобках?\r\n\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/File/FileMaker.java b/src/File/FileMaker.java
+--- a/src/File/FileMaker.java	(revision 64a62b010b6c92936fa6e29918d2eca42f261d2d)
++++ b/src/File/FileMaker.java	(date 1677791321744)
+@@ -7,10 +7,10 @@
+ 
+ public class FileMaker {
+ 
+-    public LinkedList<String>  deSerialize(String sb){
+-        Gson g = new GsonBuilder().registerTypeAdapter(java.time.ZonedDateTime.class, new Deserealizer() ) //Что в скобках?
++   // public LinkedList<String>  deSerialize(String sb){
++        //Gson g = new GsonBuilder().registerTypeAdapter(java.time.ZonedDateTime.class, new Deserealizer() ) //Что в скобках?
+ 
+-    }
++   // }
+ 
+ 
+ }

@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0423a3ed-6ef4-4669-a704-13583979880b" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/src/Command/CommandAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/CommandAddMin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/CommandClear.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/CommandExecute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/CommandExit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/CommandPrintAge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/CommandPrintType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/CommandRemoveGreater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/CommandRemoveId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/CommandRemoveType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/CommandSave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/CommandShow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/CommandUpdateId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Command/InfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/InfoCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,6 +102,7 @@
       <workItem from="1678040001410" duration="5517000" />
       <workItem from="1678123570955" duration="556000" />
       <workItem from="1678127289100" duration="1420000" />
+      <workItem from="1678307535458" duration="379000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1677791322294</created>
@@ -106,7 +118,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678012496145</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial commit">
+      <created>1678307185045</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678307185045</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Initial commit">
+      <created>1678307271753</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678307271753</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -10,13 +10,13 @@ public class Main {
         //}
         //FileRead fr = new FileRead(args[0]);
 
-        FileRead fr = new FileRead("C:\\Users\\Home\\IdeaProjects\\App/inform13.json");
+        FileRead fr = new FileRead("C:\\Users\\Home\\IdeaProjects\\App4/inform13.json");
         String data = fr.readFile();
-        System.out.println(data);
+
         LinkedList<Dragon> string = new JsonParser().deSerialize(data);
         CollectionManager collection = new CollectionManager();
                 collection.makeBase(string);
-        System.out.println(string);
+        //System.out.println(string);
 
     }
 

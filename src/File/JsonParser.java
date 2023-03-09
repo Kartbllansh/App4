@@ -19,6 +19,8 @@ public class JsonParser {
             System.out.println("Check");
             return new LinkedList<>();
         }
+        System.out.println("jhjh");
+        System.out.println(sb.toString());
         return g.fromJson(sb, type);
 
     }

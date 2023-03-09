@@ -7,4 +7,13 @@ public class HelpCommand implements Command{
     public HelpCommand(HashMap<String, Command> command ){
         this.mapCommand = command;
     }
+
+    @Override
+    public void execute() {
+
+    }
+    @Override
+    public String getDescription(){
+        return "Команда выводит  справку по доступным командам";
+    }
 }

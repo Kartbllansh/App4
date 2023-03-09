@@ -11,6 +11,6 @@ public class CommandExit implements Command {
     }
     @Override
     public String getDescription(){
-        return "Завершает работу программы";
+        return "Команда завершает работу программы";
     }
 }

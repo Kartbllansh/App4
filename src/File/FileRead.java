@@ -19,6 +19,7 @@ public class FileRead {
             while (sc.hasNextLine()) { // проверяет, является ли следующая порция данных строкой
                 line = sc.nextLine(); //считывает и переводит на следующую строчку
                 sb.append(line); //добавляет строчку к последовательности
+
             }
         } catch (IOException e) {
             System.out.println("File not found");;

@@ -1,29 +1,30 @@
-
-{
-    "Dragon": [
+[
+    {
+    "Dragon":[
         {
-    "id": 1,
-    "name": "Горыныч",
-    "coordinates": {
-        "x":1,
-        "y":2},
-    "age": 8,
-    "weight": 5,
-    "color": "зеленый",
-    "type": "AIR",
-    "head": 9
-},
-        {
-            "id": 1,
-            "name": "Безубик",
-            "coordinates": {
+            "name":"Горыныч",
+            "coordinates":{
                 "x":1,
-                "y":2},
-            "age": 8,
-            "weight": 5,
-            "color": "черный",
-            "type": "AIR",
-            "head": 9
+                "y":2
+            },
+            "age":8,
+            "weight":5,
+            "color":"зеленый",
+            "type":"AIR",
+            "head":9
+        },
+        {
+            "name":"Безубик",
+            "coordinates":{
+                "x":1,
+                "y":2
+            },
+            "age":8,
+            "weight":5,
+            "color":"черный",
+            "type":"AIR",
+            "head":9
         }
-        ]
-        }
+    ]
+}
+]

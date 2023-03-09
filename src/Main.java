@@ -16,7 +16,9 @@ public class Main {
         LinkedList<Dragon> string = new JsonParser().deSerialize(data);
         CollectionManager collection = new CollectionManager();
                 collection.makeBase(string);
-        //System.out.println(string);
+        collection.show();
+
+
 
     }
 

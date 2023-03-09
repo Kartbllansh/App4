@@ -19,10 +19,15 @@ public class JsonParser {
             System.out.println("Check");
             return new LinkedList<>();
         }
-        System.out.println("jhjh");
-        System.out.println(sb.toString());
-        return g.fromJson(sb, type);
-
+        //return g.fromJson(sb, type);
+        //System.out.println("jhjh");
+        System.out.println(sb);
+        LinkedList<Dragon> sos = g.fromJson(sb, type);
+        LinkedList<Dragon> write = new LinkedList<>();
+         for(Dragon dragon : sos){
+             write.add(dragon);
+         }
+         return write;
     }
 
     }

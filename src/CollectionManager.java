@@ -49,6 +49,7 @@ public class CollectionManager {
         List<DragonType> types = new ArrayList<>();
         for (Dragon dragon : baseList) {
             types.add(dragon.getType());
+            //сортировка нужна
         }
 
     }

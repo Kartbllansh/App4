@@ -11,25 +11,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_03_2023_23_25__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_03_2023_23_25__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_03_2023_23_25__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_03_2023_23_25__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inform13.json" beforeDir="false" afterPath="$PROJECT_DIR$/inform13.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Base/Dragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Base/Dragon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/CommandAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/CommandAdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/CommandAddMin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/CommandAddMin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/CommandClear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/CommandClear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/CommandExecute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/CommandExecute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/CommandExit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/CommandExit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/CommandPrintAge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/CommandPrintAge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/CommandPrintType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/CommandPrintType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/CommandRemoveGreater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/CommandRemoveGreater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/CommandRemoveId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/CommandRemoveId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/CommandRemoveType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/CommandRemoveType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/CommandSave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/CommandSave.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/CommandShow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/CommandShow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/CommandUpdateId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/CommandUpdateId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/HelpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/InfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/InfoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/File/Deserealizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/File/Deserealizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/File/FileRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/File/FileRead.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/File/JsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/File/JsonParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -119,6 +102,7 @@
       <workItem from="1678351183787" duration="1296000" />
       <workItem from="1678359578583" duration="4465000" />
       <workItem from="1678365161690" duration="5312000" />
+      <workItem from="1678378433678" duration="4098000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1677791322294</created>

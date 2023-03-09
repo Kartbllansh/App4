@@ -1,7 +1,13 @@
 package File;
 
+import Base.Dragon;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
+
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -27,5 +33,6 @@ public class FileRead {
         System.out.println("WORKKKK"); //проверка работы метода
         return sb.toString();
     }
+
 
 }

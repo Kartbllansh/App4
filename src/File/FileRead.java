@@ -28,7 +28,7 @@ public class FileRead {
 
             }
         } catch (IOException e) {
-            System.out.println("File not found");;
+            System.out.println("File not found");
         }
         System.out.println("WORKKKK"); //проверка работы метода
         return sb.toString();

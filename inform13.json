@@ -9,7 +9,7 @@
             },
             "age":8,
             "weight":5,
-            "color":"зеленый",
+            "color":"WHITE",
             "type":"AIR",
             "head":9
         },
@@ -21,9 +21,13 @@
             },
             "age":8,
             "weight":5,
-            "color":"черный",
+            "color":"WHITE",
             "type":"AIR",
-            "head":9
+            "head": {
+              "size": 3,
+                "eyesCount": 5,
+                "toothCount": 6
+            }
         }
     ]
 }

@@ -1,5 +1,9 @@
 package Base;
 
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
+
 public class Dragon {
 
     private Long id; //Поле не может быть null, Значение поля должно быть больше 0, Значение этого поля должно быть уникальным, Значение этого поля должно генерироваться автоматически
@@ -11,26 +15,29 @@ public class Dragon {
     private Color color; //Поле не может быть null
     private DragonType type; //Поле не может быть null
     private DragonHead head;
-public Dragon (String name, Coordinates coordinates, Integer age, Long weight,Color color, DragonType type,DragonHead head) {
-this.setName(name);
-    this.setCoordinates(coordinates);
-    this.setAge(age);
-    this.setWeight(weight);
-    this.setColor(color);
-    this.setType(type);
-    this.setHead(head);
+public Dragon (Long id,String name, Coordinates coordinates, ZonedDateTime creationDate, Integer age, Long weight,Color color, DragonType type,DragonHead head) {
+    this.id = id;
+    this.name = name;
+    this.coordinates = coordinates;
+    this.creationDate = creationDate;
+    this.age = age;
+    this.weight = weight;
+    this.color = color;
+    this.type = type;
+    this.head = head;
 }
+
     @Override
     public String toString(){
         return "Dragon{"
-                + "id=" + getId()
-                + ", name='" + getName() + '\''
-                + ", coordinates=" + getCoordinates()
-                + ", creationDate=" + getCreationDate()
-                + ", age=" + getAge()
-                + ", weight=" + getWeight()
-                + ", color=" + getColor()
-                + ", head=" + getHead()
+                + "id=" + id
+                + ", name='" + name + '\''
+                + ", coordinates=" + coordinates
+                + ", creationDate=" + creationDate
+                + ", age=" + age
+                + ", weight=" + weight
+                + ", color=" + color
+                + ", head=" + head
                 + '}';
     }
 

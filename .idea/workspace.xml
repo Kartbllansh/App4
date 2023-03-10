@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0423a3ed-6ef4-4669-a704-13583979880b" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_0_07__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_0_07__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_0_08__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_0_08__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_0_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_03_2023_0_09__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_03_2023_23_25__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_03_2023_23_25__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_03_2023_23_25__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_03_2023_23_25__Changes_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/File/DragonListDeserializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inform13.json" beforeDir="false" afterPath="$PROJECT_DIR$/inform13.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Base/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Base/Coordinates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Base/Dragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Base/Dragon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Base/DragonHead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Base/DragonHead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/File/Deserealizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/File/Deserealizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/File/FileRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/File/FileRead.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/File/JsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/File/JsonParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -102,7 +101,6 @@
       <workItem from="1678351183787" duration="1296000" />
       <workItem from="1678359578583" duration="4465000" />
       <workItem from="1678365161690" duration="5312000" />
-      <workItem from="1678378433678" duration="4098000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1677791322294</created>

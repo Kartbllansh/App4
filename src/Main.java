@@ -1,32 +1,26 @@
-import Base.Dragon;
+import File.CollectionManager;
 import File.FileRead;
-import File.JsonParser;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-
-import java.lang.reflect.Type;
-import java.util.LinkedList;
-import java.util.List;
+import File.Home;
 
 public class Main {
     public static void main(String[] args) {
-        //if(args.length == 0) {
-            //System.out.println("Hello. I am waiting your file");
-           // return;
-        //}
-        //FileRead fr = new FileRead(args[0]);
-
-        FileRead fr = new FileRead("C:\\Users\\Home\\IdeaProjects\\App4/inform13.json");
-        String data = fr.readFile();
-        Gson gson = new Gson();
-        Type dragonListType = new TypeToken<List<Dragon>>(){}.getType();
-        List<Dragon> dragons = gson.fromJson(data, dragonListType);
-        System.out.println(dragons);
-        LinkedList<Dragon> string = new JsonParser().deSerialize(data);
-        CollectionManager collection = new CollectionManager();
-                collection.makeBase(string);
-        System.out.println(string);
-        collection.show();
+        Boolean letgo = false;
+        if(args.length == 0) {
+            System.out.println("Hello. I am waiting your file");
+            return;
+        }
+        //while (!letgo) {
+            if (!args[0].endsWith(".json")) {
+                System.out.println("This program can only work with .json file.");
+                return;
+           }// else {
+              //  letgo = true;
+            //}
+       // }
+        final CollectionManager collectionManager = new CollectionManager();
+        final FileRead fileRead = new FileRead(args[0]);
+        final Home home = new Home(fileRead);
+        home.start();
 
 
 

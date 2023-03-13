@@ -29,8 +29,11 @@ public class FileRead {
             }
         } catch (IOException e) {
             System.out.println("File not found");
+            System.out.println("Введите имя файла повторно");
+            System.exit(0);
         }
-        System.out.println("WORKKKK"); //проверка работы метода
+        System.out.println("Parsing start..."); //проверка работы метода
+
         return sb.toString();
     }
 

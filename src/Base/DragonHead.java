@@ -10,6 +10,13 @@ public class DragonHead {
         this.size = size;
         this.toothCount = toothCount;
     }
+    @Override
+    public String toString(){
+    return "DragonHead:" +
+            "Eyes count =" + eyesCount +
+            ", size =" + size+
+            ", Tooth count =" + toothCount;
+    }
 
     public Double getSize() {
         return size;

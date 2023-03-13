@@ -1,3 +1,5 @@
+package File;
+
 import Base.Dragon;
 import Base.DragonType;
 
@@ -34,7 +36,7 @@ public class CollectionManager {
      }
      public void show(){
         for(int i=0; i<baseList.size(); i++){
-            System.out.println("Элемент коллекции №"+i+" :"+baseList.get(i));
+            System.out.println("Элемент коллекции №"+(i+1)+" :"+baseList.get(i));
         }
      }
 

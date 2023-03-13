@@ -1,34 +1,36 @@
 [
     {
-    "Dragon":[
-        {
-            "name":"Горыныч",
+
+        "name": "GORUNUCH",
+        "id": 676,
             "coordinates":{
-                "x":1,
-                "y":2
+                "x":789,
+                "y":0
             },
-            "age":8,
-            "weight":5,
-            "color":"WHITE",
+            "age":100,
+            "weight":333,
+            "color":"YELLOW",
             "type":"AIR",
-            "head":9
+        "head": {
+            "size": 0,
+            "eyesCount": 0,
+            "toothCount": 56
+        }
         },
         {
-            "name":"Безубик",
+            "name":"BEZUBIK",
             "coordinates":{
-                "x":1,
+                "x":-45,
                 "y":2
             },
-            "age":8,
-            "weight":5,
-            "color":"WHITE",
+            "age":555,
+            "weight":6,
+            "color":"ORANGE",
             "type":"AIR",
             "head": {
-              "size": 3,
-                "eyesCount": 5,
-                "toothCount": 6
+              "size": 10,
+                "eyesCount": 10,
+                "toothCount": 10
             }
         }
-    ]
-}
 ]
